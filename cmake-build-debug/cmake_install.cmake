@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Sefa/Desktop/cplusplus
+# Install script for directory: C:/Users/Sefa/Desktop/GitRepositories/CPlusPlus-Repository
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Sefa/Desktop/cplusplus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Sefa/Desktop/GitRepositories/CPlusPlus-Repository/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
