@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Sefa/Desktop/GitRepositories/CPlusPlus-Repository/main.cpp">
+		<Unit filename="C:/Users/Sefa/Desktop/GitRepositories/CPlusPlus-Repository/Testing.c">
 			<Option target="cplusplus"/>
 		</Unit>
 		<Unit filename="C:/Users/Sefa/Desktop/GitRepositories/CPlusPlus-Repository/CMakeLists.txt">

@@ -122,32 +122,32 @@ cplusplus/fast:
 	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/build
 .PHONY : cplusplus/fast
 
-main.obj: main.cpp.obj
+Testing.obj: Testing.c.obj
 
-.PHONY : main.obj
+.PHONY : Testing.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Testing.c.obj:
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.obj
+.PHONY : Testing.c.obj
 
-main.i: main.cpp.i
+Testing.i: Testing.c.i
 
-.PHONY : main.i
+.PHONY : Testing.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/main.cpp.i
-.PHONY : main.cpp.i
+Testing.c.i:
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.i
+.PHONY : Testing.c.i
 
-main.s: main.cpp.s
+Testing.s: Testing.c.s
 
-.PHONY : main.s
+.PHONY : Testing.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/main.cpp.s
-.PHONY : main.cpp.s
+Testing.c.s:
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.s
+.PHONY : Testing.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... cplusplus
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Testing.obj
+	@echo ... Testing.i
+	@echo ... Testing.s
 .PHONY : help
 
 

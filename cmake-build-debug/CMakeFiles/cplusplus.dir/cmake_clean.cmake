@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cplusplus.dir/main.cpp.obj"
+  "CMakeFiles/cplusplus.dir/Testing.c.obj"
   "cplusplus.pdb"
   "cplusplus.exe"
   "cplusplus.exe.manifest"
@@ -7,6 +7,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C)
   include(CMakeFiles/cplusplus.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
