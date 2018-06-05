@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <malloc.h>
 
-
+//Was ist mir hier so alles eingefallen ? nunja :  dieses verfluchte pfeil!
+//es soll sowas heißen : a->b   <=>   (*a).b  wobei a ein pointer sein sollte!
 typedef struct singleLinkedList{
     struct node *first;
     struct node *last;
@@ -21,13 +22,14 @@ void printList(linkedList *list);
 struct node *rootPointer=NULL;
 int main(void){
     linkedList list;
-    addLast(&list,2);
+    addFirst(&list,1);
+    addFirst(&list,2);
     addLast(&list,3);
-    addLast(&list,10);
-    addFirst(&list,4);
+    addLast(&list,4);
+    addLast(&list,5);
+
     printList(&list);
-//    printf("first:%d\n",list.first->data);
-//    printf("last: %d\n",list.last->data);
+
 }
 
 
@@ -55,9 +57,10 @@ void addFirst(linkedList *list,int element){
         rootPointer = list->first;
         list->last->next= NULL;
     }else {
-        list->first->next = malloc(sizeof(struct node));
-        list->first = list->first->next;
-        list->first->data = element;
+        n *newNode= malloc(sizeof(struct node));
+        newNode->data = element;
+        newNode->next = list->first;
+        list->first= newNode;
     }
 
 }
