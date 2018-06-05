@@ -3,4 +3,4 @@ project(cplusplus)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cplusplus Testing.c)
+add_executable(cplusplus SingleLinkedListAufgabe050618.c)
