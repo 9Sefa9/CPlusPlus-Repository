@@ -17,6 +17,7 @@ typedef struct node{
 //Prototypen
 void addLast(linkedList *list,int element);
 void addFirst(linkedList *list,int element);
+void removeFirst(linkedList *list,int element);
 void printList(linkedList *list);
 
 struct node *rootPointer=NULL;
@@ -27,7 +28,7 @@ int main(void){
     addLast(&list,3);
     addLast(&list,4);
     addLast(&list,5);
-
+    removeFirst(&list,2);
     printList(&list);
 
 }
@@ -63,6 +64,25 @@ void addFirst(linkedList *list,int element){
         list->first= newNode;
     }
 
+}
+void removeFirst(linkedList *list,int element){
+    n *tmpNode = list->first;
+    n *previousNode = NULL;
+    n *nextNode = list->first->next;
+       while(tmpNode != NULL){
+           if(tmpNode->data == element){
+               list->first = nextNode;
+               previousNode->next->next = nextNode;
+               //list->first = previousNode;
+               //list->first->data = previousNode->data;
+               //list->first->next = NULL;
+            break;
+           }else{
+               previousNode = tmpNode;
+               tmpNode = tmpNode->next;
+               nextNode = nextNode->next;
+           }
+       }
 }
 void printList(linkedList *list){
     n *tmpNode = list->first; //äquivalent zu list->first
