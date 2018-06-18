@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cplusplus.dir/Testing.c.obj"
+  "CMakeFiles/cplusplus.dir/Test.c.obj"
   "cplusplus.pdb"
   "cplusplus.exe"
   "cplusplus.exe.manifest"

@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.1.1\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository
+CMAKE_SOURCE_DIR = G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug
+CMAKE_BINARY_DIR = G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cplusplus.dir/depend.make
@@ -56,43 +56,43 @@ include CMakeFiles/cplusplus.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cplusplus.dir/flags.make
 
-CMakeFiles/cplusplus.dir/Testing.c.obj: CMakeFiles/cplusplus.dir/flags.make
-CMakeFiles/cplusplus.dir/Testing.c.obj: ../Testing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cplusplus.dir/Testing.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\cplusplus.dir\Testing.c.obj   -c C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\Testing.c
+CMakeFiles/cplusplus.dir/Test.c.obj: CMakeFiles/cplusplus.dir/flags.make
+CMakeFiles/cplusplus.dir/Test.c.obj: ../Test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cplusplus.dir/Test.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\cplusplus.dir\Test.c.obj   -c G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\Test.c
 
-CMakeFiles/cplusplus.dir/Testing.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cplusplus.dir/Testing.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\Testing.c > CMakeFiles\cplusplus.dir\Testing.c.i
+CMakeFiles/cplusplus.dir/Test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cplusplus.dir/Test.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\Test.c > CMakeFiles\cplusplus.dir\Test.c.i
 
-CMakeFiles/cplusplus.dir/Testing.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cplusplus.dir/Testing.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\Testing.c -o CMakeFiles\cplusplus.dir\Testing.c.s
+CMakeFiles/cplusplus.dir/Test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cplusplus.dir/Test.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\Test.c -o CMakeFiles\cplusplus.dir\Test.c.s
 
-CMakeFiles/cplusplus.dir/Testing.c.obj.requires:
+CMakeFiles/cplusplus.dir/Test.c.obj.requires:
 
-.PHONY : CMakeFiles/cplusplus.dir/Testing.c.obj.requires
+.PHONY : CMakeFiles/cplusplus.dir/Test.c.obj.requires
 
-CMakeFiles/cplusplus.dir/Testing.c.obj.provides: CMakeFiles/cplusplus.dir/Testing.c.obj.requires
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.obj.provides.build
-.PHONY : CMakeFiles/cplusplus.dir/Testing.c.obj.provides
+CMakeFiles/cplusplus.dir/Test.c.obj.provides: CMakeFiles/cplusplus.dir/Test.c.obj.requires
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Test.c.obj.provides.build
+.PHONY : CMakeFiles/cplusplus.dir/Test.c.obj.provides
 
-CMakeFiles/cplusplus.dir/Testing.c.obj.provides.build: CMakeFiles/cplusplus.dir/Testing.c.obj
+CMakeFiles/cplusplus.dir/Test.c.obj.provides.build: CMakeFiles/cplusplus.dir/Test.c.obj
 
 
 # Object files for target cplusplus
 cplusplus_OBJECTS = \
-"CMakeFiles/cplusplus.dir/Testing.c.obj"
+"CMakeFiles/cplusplus.dir/Test.c.obj"
 
 # External object files for target cplusplus
 cplusplus_EXTERNAL_OBJECTS =
 
-cplusplus.exe: CMakeFiles/cplusplus.dir/Testing.c.obj
+cplusplus.exe: CMakeFiles/cplusplus.dir/Test.c.obj
 cplusplus.exe: CMakeFiles/cplusplus.dir/build.make
 cplusplus.exe: CMakeFiles/cplusplus.dir/linklibs.rsp
 cplusplus.exe: CMakeFiles/cplusplus.dir/objects1.rsp
 cplusplus.exe: CMakeFiles/cplusplus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cplusplus.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cplusplus.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cplusplus.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,7 +100,7 @@ CMakeFiles/cplusplus.dir/build: cplusplus.exe
 
 .PHONY : CMakeFiles/cplusplus.dir/build
 
-CMakeFiles/cplusplus.dir/requires: CMakeFiles/cplusplus.dir/Testing.c.obj.requires
+CMakeFiles/cplusplus.dir/requires: CMakeFiles/cplusplus.dir/Test.c.obj.requires
 
 .PHONY : CMakeFiles/cplusplus.dir/requires
 
@@ -109,6 +109,6 @@ CMakeFiles/cplusplus.dir/clean:
 .PHONY : CMakeFiles/cplusplus.dir/clean
 
 CMakeFiles/cplusplus.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles\cplusplus.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles\cplusplus.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cplusplus.dir/depend
 

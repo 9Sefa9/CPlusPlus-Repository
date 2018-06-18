@@ -17,27 +17,25 @@ typedef struct node{
 //Prototypen
 void addLast(linkedList *list,int element);
 void addFirst(linkedList *list,int element);
-void removeFirst(linkedList *list,int element);
 void printList(linkedList *list);
 
 struct node *rootPointer=NULL;
 int main(void){
     linkedList list;
     addFirst(&list,1);
-    addFirst(&list,2);
     addLast(&list,3);
     addLast(&list,4);
+    addFirst(&list,2);
     addLast(&list,5);
-    removeFirst(&list,2);
     printList(&list);
-
+    return 0;
 }
 
 
 //Füge Element am Ende der Listei
 void addLast(linkedList *list,int element){
     if(rootPointer == NULL){
-        list->first = malloc(sizeof(struct node));
+        list->first= malloc(sizeof(struct node));
         list->first->data = element;
         list->last = list->first;
         rootPointer = list->last;
@@ -65,25 +63,7 @@ void addFirst(linkedList *list,int element){
     }
 
 }
-void removeFirst(linkedList *list,int element){
-    n *tmpNode = list->first;
-    n *previousNode = NULL;
-    n *nextNode = list->first->next;
-       while(tmpNode != NULL){
-           if(tmpNode->data == element){
-               list->first = nextNode;
-               previousNode->next->next = nextNode;
-               //list->first = previousNode;
-               //list->first->data = previousNode->data;
-               //list->first->next = NULL;
-            break;
-           }else{
-               previousNode = tmpNode;
-               tmpNode = tmpNode->next;
-               nextNode = nextNode->next;
-           }
-       }
-}
+
 void printList(linkedList *list){
     n *tmpNode = list->first; //äquivalent zu list->first
     while(tmpNode != NULL){

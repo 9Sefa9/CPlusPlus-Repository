@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.1.1\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository
+CMAKE_SOURCE_DIR = G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug
+CMAKE_BINARY_DIR = G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Sefa\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Users\Progamer\Desktop\GitRepositories\CPlusPlus-Repository\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,32 +122,32 @@ cplusplus/fast:
 	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/build
 .PHONY : cplusplus/fast
 
-Testing.obj: Testing.c.obj
+Test.obj: Test.c.obj
 
-.PHONY : Testing.obj
+.PHONY : Test.obj
 
 # target to build an object file
-Testing.c.obj:
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.obj
-.PHONY : Testing.c.obj
+Test.c.obj:
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Test.c.obj
+.PHONY : Test.c.obj
 
-Testing.i: Testing.c.i
+Test.i: Test.c.i
 
-.PHONY : Testing.i
+.PHONY : Test.i
 
 # target to preprocess a source file
-Testing.c.i:
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.i
-.PHONY : Testing.c.i
+Test.c.i:
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Test.c.i
+.PHONY : Test.c.i
 
-Testing.s: Testing.c.s
+Test.s: Test.c.s
 
-.PHONY : Testing.s
+.PHONY : Test.s
 
 # target to generate assembly for a file
-Testing.c.s:
-	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Testing.c.s
-.PHONY : Testing.c.s
+Test.c.s:
+	$(MAKE) -f CMakeFiles\cplusplus.dir\build.make CMakeFiles/cplusplus.dir/Test.c.s
+.PHONY : Test.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... cplusplus
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Testing.obj
-	@echo ... Testing.i
-	@echo ... Testing.s
+	@echo ... Test.obj
+	@echo ... Test.i
+	@echo ... Test.s
 .PHONY : help
 
 
