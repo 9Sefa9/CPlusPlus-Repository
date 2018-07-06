@@ -12,7 +12,7 @@ listNode * initializeList(int data);
 void addLast(listNode * root, int toAdd);
 void printList(listNode * root);
 void addFirst(listNode ** root, int toAdd);
-void removeAt(listNode *root,int index);
+void removeAt(listNode **root,int index);
 
 int main() {
 
@@ -20,10 +20,12 @@ int main() {
     addLast(root, 8);
     addFirst(&(root), 9);
     addLast(root,2);
+    addLast(root,7);
+    addLast(root,5);
     printf("VORHER:\n");
     printList(root);
-    //removeAt(root,1);
-    removeAt(root,0);
+    removeAt(&(root),0);
+   // removeAt(root,0);
     printf("NACHHER:\n");
     printList(root);
 }
@@ -60,35 +62,36 @@ void printList(listNode * root){
         current = current -> next;
     }
 }
-void removeAt(listNode * root , int index){
-    listNode * current = root;
+void removeAt(listNode ** root , int index){
+    listNode ** current = root;
     listNode * previous = NULL;
     for(int i = 0 ; i<index;i++) {
-        previous = current;
-        current =current->next;
+        previous = (*current);
+        *current = (*current)->next;
     }
     //3 4 6
-    if(previous != NULL &&  current != NULL && current->next != NULL){
-        printf("Deleting: %d (%d) %d\n",previous->data, (current->data),current->next->data);
+    if(previous != NULL &&  (*current) != NULL && (*current)->next != NULL){
+        printf("Deleting: %d\n", (*current)->data);
         //vorrige pointer zeigt jetzt auf dem darauf folgendem
-        previous->next = current->next;
-        root = current->next;
+        previous->next = (*current)->next;
+        *root = (*current)->next;
         return;
     }
-    //[] 4 6
-    if(previous == NULL && current!=NULL && current->next !=NULL && index == 0){
+    //[] 4 6 DAS KLAPPT NICHT
+    if(previous == NULL && current!=NULL && (*current)->next !=NULL && index == 0){
+        printf("CURRRENT VALUE: %d\n",(*current)->data);
 
-        printf("Deleting: [] (%d) %d\n",current->data,current->next->data);
-        //printf("PRECIOUS:%d\n",previous->data);
-        printf("CURRENT:%d\n",current->data);
-        printf("ROOT:%d\n",root->data);
+        listNode * newRoot = malloc(sizeof(listNode));
+        newRoot -> data = (*root)->next->data;
+        newRoot -> next = (*root)->next->next;
+        *root = newRoot;
+
         return;
     }
     //4 6 []
-    if(previous != NULL && current != NULL && current->next == NULL){
-        printf("Deleting: %d (%d) []: %d\n",previous->data,current->data);
-        //previous->next = NULL;
-        //root = previous;
+    if(previous != NULL && (*current) != NULL && (*current)->next == NULL){
+        previous->next = NULL;
+        *root = previous;
         return;
     }
 }
