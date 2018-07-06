@@ -1,0 +1,12 @@
+C++:
+//klassen defintiion passieren in Headern
+//wenn ich objekt verwenden will, geht das nur über headern.
+//klassendefinition kommen in de Header
+//frined operator: friend class
+//"ich" muss einer bestimmten kalsse erlauben, auf meine memebr zuzugreifen. Das geht übers friend
+//referenz übergabe mit kaufmännischem und
+//friend gikt nur in eine richtung.
+
+//Header guard, prevention: das zyklische inclusion von headern.
+//wichtig ist die reihenfolge der ausführung des headers.
+//objekt erstellung nur mithilfe des headers mögllich.

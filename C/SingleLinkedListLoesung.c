@@ -22,8 +22,8 @@ int main() {
     addLast(root,2);
     printf("VORHER:\n");
     printList(root);
+    //removeAt(root,1);
     removeAt(root,0);
-   // removeAt(root,0);
     printf("NACHHER:\n");
     printList(root);
 }
@@ -69,28 +69,26 @@ void removeAt(listNode * root , int index){
     }
     //3 4 6
     if(previous != NULL &&  current != NULL && current->next != NULL){
-        printf("Deleting: %d\n", (current->data));
+        printf("Deleting: %d (%d) %d\n",previous->data, (current->data),current->next->data);
         //vorrige pointer zeigt jetzt auf dem darauf folgendem
         previous->next = current->next;
         root = current->next;
         return;
     }
-    //[] 4 6 DAS KLAPPT NICHT GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANZ
+    //[] 4 6
     if(previous == NULL && current!=NULL && current->next !=NULL && index == 0){
-        printf("CURRRENT VALUE: %d\n",current->data);
 
-        //previous = current;
-        //current = current->next;
-        //revious->next = current;
-        //root = current->next;
-        //free(current);
-
+        printf("Deleting: [] (%d) %d\n",current->data,current->next->data);
+        //printf("PRECIOUS:%d\n",previous->data);
+        printf("CURRENT:%d\n",current->data);
+        printf("ROOT:%d\n",root->data);
         return;
     }
     //4 6 []
     if(previous != NULL && current != NULL && current->next == NULL){
-        previous->next = NULL;
-        root = previous;
+        printf("Deleting: %d (%d) []: %d\n",previous->data,current->data);
+        //previous->next = NULL;
+        //root = previous;
         return;
     }
 }
