@@ -9,9 +9,11 @@ typedef struct Result {
 Result doSomething();
 int main(){
     Result result;
+    result.success = false;
     printf("vorher: %d\n",result.success);
     Result r = doSomething();
-    printf("nachher: %d\n",r.success);
+    result = r.success;
+    printf("nachher: %d\n",result.success);
 }
 Result doSomething (void) {
     Result res;
