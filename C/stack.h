@@ -16,7 +16,7 @@ typedef struct Node{
     struct Node *next;
     struct Node *previous;
 }Node;
-void pop(Stack *stack);
-void push(Stack *stack,int value);
-void print(Stack stack);
+extern void pop(Stack *stack);
+extern void push(Stack *stack,int value);
+extern void print(Stack stack);
 #endif //CPLUSPLUS_STACK_H
