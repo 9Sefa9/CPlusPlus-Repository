@@ -28,7 +28,7 @@ int main(void){
     print(stack);
 
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 void push(Stack *stack,int value){
         if(stack->root == NULL){
