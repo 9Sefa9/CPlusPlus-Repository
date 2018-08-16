@@ -104,8 +104,7 @@ bool DoubleLinkedList::remove(int index) {
 }
 
 void DoubleLinkedList::print(void) const {
-	//std::cout << "Here the elements should be printed, one by one" << std::endl;
-	std::cout << *this;
+	std::cout << "Here the elements should be printed, one by one" << std::endl;
 }
 DoubleLinkedList::~DoubleLinkedList() {
 	std::cout<<"calling DLL dtor"<<std::endl;

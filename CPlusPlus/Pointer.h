@@ -19,7 +19,7 @@ public:
 
   //----friend----
   int privaterInteger=31213;
-  friend void ichBinEinFreund(Pointer& p);
+ // friend void ichBinEinFreund(Pointer& p);
   void ichBinKeinFreund();
   //--------------
 

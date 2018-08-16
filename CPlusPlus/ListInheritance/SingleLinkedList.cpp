@@ -80,15 +80,7 @@ bool SingleLinkedList::remove(int index) {
 }
 
 void SingleLinkedList::print() const {
-	//Meine Lösung:
-	//ListElement *firstPtr = first;
-	//while(firstPtr != NULL){
-	//	std::cout<<firstPtr->data<<std::endl;
-//		firstPtr = firstPtr->next;
-
 	std::cout << "Here the elements should be printed, one by one" << std::endl;
-	//Seine lösung:
-	std:: cout << *this;
 }
 
 SingleLinkedList::~SingleLinkedList() {

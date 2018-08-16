@@ -12,9 +12,6 @@ public:
 	virtual ~LinkedList();
 	virtual ListElement *getFirst() const;
 	virtual ListElement *getLast() const;
-
-	//seine lösung:
-	friend std::ostream &operator<< (std::ostream& o, const LinkedList&rhs);
 };
 
 

@@ -1,3 +1,4 @@
+#include "ArrayList.h"
 #include "DoubleLinkedList.h"
 #include "SingleLinkedList.h"
 #include <iostream>
@@ -5,9 +6,9 @@
 
 void addAndPrint(List* const l) {
 	l->add(1);
+	l->add(1);
+	l->add(1);
 	l->add(2);
-	l->add(3);
-	l->add(4);
 	l->print();
 }
 int main(void) {
