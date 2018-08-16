@@ -58,10 +58,11 @@ int main(){
 void Pointer::ichBinKeinFreund(){
 
 }
-void ichBinEinFreund(Pointer &p) {
+//könnte fehlerhaft sein!
+void Pointer::ichBinEinFreund(Pointer &p) {
     p.privaterInteger;//private zugang!
 }
 int main(){
-
+ Pointer point(2);
 
 }

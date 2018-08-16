@@ -2,7 +2,9 @@
 #include "Display.h"
 #include "Storage.h"
 
-Display::Display(bool displayIntFirst) {m_displayIntFirst = displayIntFirst;}
+Display::Display(bool displayIntFirst) {
+    m_displayIntFirst = displayIntFirst;
+}
 
 void Display::displayItem(Storage &storage) {
     if (m_displayIntFirst)

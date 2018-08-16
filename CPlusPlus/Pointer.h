@@ -9,6 +9,7 @@
 #include "Pointer2.h"
 
 class Pointer {
+private:int privaterInteger=31213;
 public:
   /*Pointer(const Pointer&);
     Pointer(){
@@ -18,8 +19,8 @@ public:
   */
 
   //----friend----
-  int privaterInteger=31213;
- // friend void ichBinEinFreund(Pointer& p);
+
+  friend void ichBinEinFreund(Pointer& p);
   void ichBinKeinFreund();
   //--------------
 
