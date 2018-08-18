@@ -10,15 +10,12 @@
 class Parent;
 class Child : public Parent{
 public:
-    using Parent::f;
-    virtual void f(int a) override{
+    virtual void virtualF(short a){
         std::cout<<"call from Child\n"<<a;
     };
-    virtual void doSomethingInChild() {
-        std::cout <<"do something child\n";
-
-    }
-
+    virtual void virtualF(int a){
+        std::cout<<"call from Child\n"<<a;
+    };
 };
 
 #endif //CPLUSPLUS_CHILD_H
