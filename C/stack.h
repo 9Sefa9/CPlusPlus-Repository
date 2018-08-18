@@ -4,7 +4,7 @@
 
 #ifndef CPLUSPLUS_STACK_H
 #define CPLUSPLUS_STACK_H
-extern int test;
+
 //Stack definition
 typedef struct Stack{
     struct Node *root;

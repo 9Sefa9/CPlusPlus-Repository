@@ -14,7 +14,7 @@ int main(){
     return 0;
 }*/
 //-----------Manual Management in C--------------------------------
-int main(void){
+/*int main(void){
     int *p1= malloc(sizeof(int));
     *p1 = 5;
     //int *p2=p1;
@@ -23,5 +23,13 @@ int main(void){
     printf("p1: %i\n",*p1);
     //printf("p2: %i\n",*p2);
     return 0;
-}
+}*/
 //------------------------------------------------------
+int main(){
+    int value = 4;
+    const int *a = &value;
+    int *b = (int *) a;
+    *b = 77;
+    printf("%i",*b);
+    return 0;
+}

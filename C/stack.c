@@ -8,7 +8,7 @@
 4. When extern is used with a variable, it’s only declared not defined.
 5. As an exception, when an extern variable is declared with initialization, it is taken as definition of the variable as well.
  * */
-test = 4;
+
 int main(void){
 
     Stack stack;
@@ -20,11 +20,7 @@ int main(void){
     push(&stack,5);
     push(&stack,6);
     pop(&stack);
-    pop(&stack);
-    pop(&stack);
-    pop(&stack);
-    pop(&stack);
-    printf("extern: %i\n",test);
+
     print(stack);
 
 
