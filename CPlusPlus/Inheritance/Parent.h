@@ -25,12 +25,17 @@ public:
          std::cout << "call from parent!\n" << d;
       }
 public:
+    //operator overloading
     friend ostream& operator<<(ostream& o, const Parent&);
       //type conversion:
     operator bool(){
         return true;
     }
 
+public: void Ppub(){std::cout<<"Ppub";}
+public: void getPpriv()const{Ppriv();}
+protected: void Pprot(){std::cout<<"Pprot";}
+private: void Ppriv()const{std::cout<<"Ppriv";}
 
 };
 #endif //CPLUSPLUS_PARENT_H

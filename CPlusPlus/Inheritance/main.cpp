@@ -11,13 +11,13 @@ int main(){
     // base funciton und Kind function gleich ?  dann override !
     //falls Base und Child unterschiedliche FUnktionen haben: Base Class function wird aufgerufen.
     //Also überladen.
-    Child c1;
-    Parent *p1 = &c1;
-    short s = 5;
-    p1->virtualF(3);
+   // Child c1;
+
+   // Parent *p1 = &c1;
+   // short s = 5;
+   // p1->virtualF(3);
 
     //ostream operator overloading for <<
-    Parent p2,p3;
     //cout <<"TEEEEST::"<<p2<<"\n";
 
     //operator bool
@@ -34,4 +34,11 @@ int main(){
     }catch(const myException& e){
         throw e;
     }*/
+
+
+    Parent p2;
+    Child c2;
+
+    c2.Ppriv();
+
 }

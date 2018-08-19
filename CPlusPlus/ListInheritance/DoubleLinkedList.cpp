@@ -17,6 +17,7 @@ int DoubleLinkedList::get(int index) const {
 		return curr_element_ptr->data;
 	} else {
 		//TODO: Throw exception!!
+
 		return -1;
 	}
 }
