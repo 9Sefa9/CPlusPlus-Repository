@@ -1,8 +1,7 @@
 #include "Collection.h"
 #include <iostream>
 
-Collection::Collection(int size):size(size) {
-}
+
 
 bool Collection::isEmpty(void) const {
 	return size == 0;

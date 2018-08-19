@@ -3,9 +3,6 @@
 #include "DoubleLinkedList.h"
 #include "ListElement.h"
 
-DoubleLinkedList::DoubleLinkedList(void) :
-		LinkedList(0,0,0){
-}
 
 int DoubleLinkedList::get(int index) const {
 	if (index < size) {

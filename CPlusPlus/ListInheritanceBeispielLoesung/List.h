@@ -11,7 +11,7 @@
 
 class List : public Collection {
 public:
-	List(int size);
+	List(int size):Collection(size) {}
 	virtual ~List(void);
 	virtual int get(int index) const = 0; //pure virtual function -> abstrakt.  muss definiert werden.
 	virtual bool remove(int i) =0;

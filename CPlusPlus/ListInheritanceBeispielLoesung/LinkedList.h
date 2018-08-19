@@ -8,7 +8,7 @@ protected:
 	ListElement *first;
 	ListElement *last;
 public:
-	LinkedList(ListElement *first, ListElement *last, int size);
+	LinkedList(ListElement *first, ListElement *last, int size):List(size),first(first),last(last) {}
 	virtual ~LinkedList();
 	virtual ListElement *getFirst() const;
 	virtual ListElement *getLast() const;

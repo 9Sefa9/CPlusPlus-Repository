@@ -13,7 +13,7 @@ class Collection {
 protected:
 	int size;
 public:
-	Collection(int size);
+	Collection(int size):size(size) {}
 	virtual ~Collection(void);
 	virtual bool isEmpty(void) const;
 	virtual bool add(int i) = 0;

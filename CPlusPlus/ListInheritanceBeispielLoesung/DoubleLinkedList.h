@@ -13,7 +13,7 @@
 class DoubleLinkedList : public LinkedList {
 private:
 public:
-	DoubleLinkedList(void);
+	DoubleLinkedList(void) : LinkedList(0,0,0){}
 	~DoubleLinkedList(void);
 	bool add(int data);
 	bool add(int data, int index);
