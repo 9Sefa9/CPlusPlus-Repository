@@ -2,7 +2,6 @@
 #include <stdarg.h>
 #include <stdbool.h>
 #include <malloc.h>
-
 //-----------function prototyping-------------
 /*int getAddition(int a,int b){
     return a+b;
@@ -25,11 +24,29 @@ int main(){
     return 0;
 }*/
 //------------------------------------------------------
+//static austesten.!
+#include "Test.h"
+#include <stdarg.h>
+static int t=4;
+externVariable = 4;
+int test(int a){
+    int *t = malloc(sizeof(int));
+    *t = a;
+    return *t;
+}
+char *varL(int nummer, char array[]){
+    char *res = malloc(2*sizeof(char));
+    for(int i = 0 ;i<nummer;i++){
+        res[i] = array[i];
+    }
+
+    return res;
+
+}
 int main(){
-    int value = 4;
-    const int *a = &value;
-    int *b = (int *) a;
-    *b = 77;
-    printf("%i",*b);
+
+    char ar[] = "HI";
+    char* test = varL(3,ar);
+    printf("%s",test);
     return 0;
 }

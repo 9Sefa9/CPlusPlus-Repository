@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(cplusplus)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(cplusplus CPlusPlus/ListInheritanceBeispielLoesung/Collection.cpp CPlusPlus/ListInheritanceBeispielLoesung/Collection.h CPlusPlus/ListInheritanceBeispielLoesung/DoubleLinkedList.cpp CPlusPlus/ListInheritanceBeispielLoesung/DoubleLinkedList.h CPlusPlus/ListInheritanceBeispielLoesung/LinkedList.cpp CPlusPlus/ListInheritanceBeispielLoesung/LinkedList.h CPlusPlus/ListInheritanceBeispielLoesung/List.cpp CPlusPlus/ListInheritanceBeispielLoesung/List.h CPlusPlus/ListInheritanceBeispielLoesung/ListElement.h CPlusPlus/ListInheritanceBeispielLoesung/Main.cpp CPlusPlus/ListInheritanceBeispielLoesung/SingleLinkedList.cpp CPlusPlus/ListInheritanceBeispielLoesung/SingleLinkedList.h)
